@@ -1,0 +1,10 @@
+{
+  "packageRules": [
+    {
+      "groupName": "@nrwl package group (major or minor)",
+      "matchPackagePatterns": ["^@nrwl/"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    }
+  ]
+}

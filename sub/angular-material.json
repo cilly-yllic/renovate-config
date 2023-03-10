@@ -1,0 +1,10 @@
+{
+  "packageRules": [
+    {
+      "groupName": "@angular/material package group (major or minor)",
+      "matchPackageNames": ["@angular/material", "@angular/cdk", "@angular/material-moment-adapter"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    }
+  ]
+}

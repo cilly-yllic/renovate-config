@@ -1,0 +1,52 @@
+{
+  "extends": [
+    "config:base",
+    "github>cilly-yllic/renovate-config//sub/angular",
+    "github>cilly-yllic/renovate-config//sub/angular-material",
+    "github>cilly-yllic/renovate-config//sub/eslint",
+    "github>cilly-yllic/renovate-config//sub/jest",
+    "github>cilly-yllic/renovate-config//sub/nx",
+    "github>cilly-yllic/renovate-config//sub/storybook",
+    "github>cilly-yllic/renovate-config//sub/vulnerability-alerts"
+  ],
+  "timezone": "Asia/Tokyo",
+  "dependencyDashboard": false,
+  "schedule": ["every weekend"],
+  "major": {
+    "stabilityDays": 7
+  },
+  "minor": {
+    "stabilityDays": 3
+  },
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 0,
+  "enabledManagers": ["github-actions", "npm"],
+  "baseBranches": ["staging"],
+  "automerge": false,
+  "packageRules": [
+    {
+      "groupName": "typescript (major or minor)",
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+    {
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
+      "groupName": "update all patch or less dependencies",
+      "prPriority": 10
+    },
+    {
+      "groupName": "@types packages (minor or patch)",
+      "matchPackagePatterns": ["^@types/"],
+      "matchUpdateTypes": ["minor"],
+      "prPriority": 1
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["other packages"],
+      "groupName": "other packages",
+      "prPriority": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "packageRules": [
+    {
+      "groupName": "@storybook package group (major or minor)",
+      "matchPackagePatterns": ["^@storybook/", "@nrwl/storybook"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    }
+  ]
+}

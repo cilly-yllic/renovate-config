@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "config:base",
+    "github>cilly-yllic/renovate-config//sub/eslint",
+    "github>cilly-yllic/renovate-config//sub/firebase",
+    "github>cilly-yllic/renovate-config//sub/github-actions",
+    "github>cilly-yllic/renovate-config//sub/jest",
+    "github>cilly-yllic/renovate-config//sub/slack",
+    "github>cilly-yllic/renovate-config//sub/vulnerability-alerts"
+  ],
+  "timezone": "Asia/Tokyo",
+  "dependencyDashboard": false,
+  "schedule": ["every weekend"],
+  "major": {
+    "stabilityDays": 7
+  },
+  "minor": {
+    "stabilityDays": 3
+  },
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 0,
+  "enabledManagers": ["github-actions", "npm"],
+  "baseBranches": ["staging"],
+  "automerge": false,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
+      "groupName": "update all minor or less dependencies",
+      "prPriority": 10
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["other packages"],
+      "groupName": "other packages",
+      "prPriority": 0
+    }
+  ]
+}

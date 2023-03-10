@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": ["^@slack"],
+      "labels": ["slack"],
+      "groupName": "slack packages",
+      "prPriority": 1
+    }
+  ]
+}

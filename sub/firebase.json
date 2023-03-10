@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": ["^firebase"],
+      "labels": ["firebase"],
+      "groupName": "firebase packages",
+      "prPriority": 1
+    }
+  ]
+}

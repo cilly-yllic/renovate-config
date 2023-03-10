@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": ["^@actions"],
+      "labels": ["actions"],
+      "groupName": "actions packages",
+      "prPriority": 1
+    }
+  ]
+}

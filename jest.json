@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": ["^jest", "^@types/jest"],
+      "labels": ["jest"],
+      "groupName": "jest packages",
+      "prPriority": 1
+    }
+  ]
+}

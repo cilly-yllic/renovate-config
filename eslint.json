@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": ["^eslint", "^@typescript-eslint"],
+      "labels": ["eslint"],
+      "groupName": "eslint packages",
+      "prPriority": 1
+    }
+  ]
+}

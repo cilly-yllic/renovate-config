@@ -2,6 +2,7 @@
   "extends": [
     "config:base",
     "github>cilly-yllic/renovate-config//sub/github-actions",
+    "github>cilly-yllic/renovate-config//sub/ignore-engines-field",
     "github>cilly-yllic/renovate-config//sub/vulnerability-alerts"
   ],
   "timezone": "Asia/Tokyo",

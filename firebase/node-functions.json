@@ -4,6 +4,7 @@
     "github>cilly-yllic/renovate-config//sub/eslint",
     "github>cilly-yllic/renovate-config//sub/firebase",
     "github>cilly-yllic/renovate-config//sub/github-actions",
+    "github>cilly-yllic/renovate-config//sub/ignore-engines-field",
     "github>cilly-yllic/renovate-config//sub/jest",
     "github>cilly-yllic/renovate-config//sub/slack",
     "github>cilly-yllic/renovate-config//sub/vulnerability-alerts"

@@ -1,0 +1,11 @@
+{
+  "packageRules": [
+    {
+      "description": "Ignore nodejs",
+      "matchPackageNames": ["node"],
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["engines"],
+      "enabled": false
+    }
+  ]
+}

@@ -31,6 +31,11 @@
       "enabled": false
     },
     {
+      "groupName": "firebase",
+      "matchPackageNames": ["firebase"],
+      "enabled": false
+    },
+    {
       "matchUpdateTypes": ["patch", "pin", "digest"],
       "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
       "groupName": "update all patch or less dependencies",
